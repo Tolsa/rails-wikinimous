@@ -1,0 +1,128 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  margin: 0px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(30,30,30,0.6);
+  a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    &:hover{
+      color: rgba(255,255,255,0.8);
+    }
+
+  }
+}
+
+.wikinimous {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  a {
+    color: rgba(255,255,255,1);
+    &:hover{
+      color: rgba(255,255,255,1);
+      text-shadow: 2px 2px 10px white;
+    }
+  }
+}
+
+.container-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1.5px solid #04175E;
+  padding: 10px;
+  width: 200px;
+  a {
+    text-decoration: none;
+    color: #47484C;
+  }
+  &:hover {
+      background-color: #04175E;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+}
+
+.container-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-bar-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  h1 {
+    margin-right: 50px;
+  }
+}
+
+.footer-article {
+  a {
+    text-decoration: none;
+    color: #47484C;
+    &:hover {
+      color: #096ECF;
+    }
+  }
+}
+
+.banner-img {
+  height: 250px;
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.form-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+.form-item {
+  margin: 10px;
+}
+
+.btn-primary {
+  font-size: 17px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  color: #232323;
+  border: 2px solid #232323;
+  &:hover {
+    background-color: #232323;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+  }
+}

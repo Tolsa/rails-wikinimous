@@ -1,0 +1,24 @@
+<div class="container-article">
+  <div class="title-bar-article">
+    <h1> <%= @article.title %> </h1>
+
+    <%= link_to image_tag("edit.png", width: 30), edit_article_path(@article.id) %>
+    <%= link_to image_tag("delete.png", width: 30), article_path(@article),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  </div>
+
+ <div class="banner-img" style="background-image: url('http://lorempixel.com/800/300/city/'); background-size: cover; background-position: center;">
+
+</div>
+
+  <p>
+    <%= @article.content %>
+  </p>
+
+
+  <div class="footer-article">
+    <%= link_to "Back to home", articles_path %>
+  </div>
+
+</div>

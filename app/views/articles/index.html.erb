@@ -1,0 +1,11 @@
+<div class="container-list">
+  <h1>Coucou</h1>
+
+  <% @articles.each do |a| %>
+    <div class="item">
+      <%= link_to a.title, article_path(a) %>
+    </div>
+
+  <% end %>
+</div>
+
